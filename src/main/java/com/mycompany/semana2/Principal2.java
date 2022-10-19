@@ -49,27 +49,23 @@ public class Principal2 {
             System.out.println("posicion "+(i+1)+": "+decimalList[i]);
         }*/
 
-
-        
         System.out.println(" Ingrese la dimensión del arreglo ");
         var dimension = new Scanner(System.in);
         var valor = dimension.nextInt();
         var num = new int[valor];
-        var x=valor;
-        var variable=0;
+        var x = valor;
+        var variable = 0;
         for (int i = 0; i < x; i++) {
-            System.out.println("Ingrese el valor de la posicion "+(i+1)+": ");
+            System.out.println("Ingrese el valor de la posicion " + (i + 1) + ": ");
             var leer = new Scanner(System.in);
             variable = leer.nextInt();
-            num[i]=variable;
+            num[i] = variable;
         }
-         System.out.println("Los numeros ingresados son: ");
-        for(int i = 0; i < x; i++) {
-        System.out.println(num[i]);
+        System.out.println("Los numeros ingresados son: ");
+        for (int i = 0; i < x; i++) {
+            System.out.println(num[i]);
         }
-        
-        
-        
+
     }
 
 }
