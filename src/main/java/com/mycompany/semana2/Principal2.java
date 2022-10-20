@@ -64,26 +64,60 @@ public class Principal2 {
         System.out.println("Los numeros ingresados son: ");
         for (int i = 0; i < x; i++) {
             System.out.println(num[i]);}*/
-        var lectura= new Scanner(System.in);
+ /*
+                    
+        var lectura = new Scanner(System.in);
         System.out.println("Ingrese el numero de filas que tendra la matriz");
-          var file=lectura.nextInt();
+        var file = lectura.nextInt();
         System.out.println("Ingrese el numero de columnas que tendra la matriz");
-          var columnas=lectura.nextInt(); 
-          var matriz=new int[file][columnas];
-          for (int i = 0; i < file; i++){
-          for(int j = 0; j < columnas; j++){
-          System.out.println("Ingrese el valor de la pocicion ["+(i+1)+"]"+"["+(j+1)+"]");
-          var x= new Scanner(System.in);
-          matriz[i][j]= x.nextInt();
-          }}
-          for (int i = 0; i < file; i++){
-          for(int j = 0; j < columnas; j++){
-          System.out.print("El valor de la pocicion ["+(i+1)+"]"+"["+(j+1)+"]:");
-          System.out.println(matriz[i][j]);
-          
-          }}
-          }      
+        var columnas = lectura.nextInt();
+        var matriz = new int[file][columnas];
+        for (int i = 0; i < file; i++) {
+            for (int j = 0; j < columnas; j++) {
+                System.out.println("Ingrese el valor de la pocicion [" + (i + 1) + "]" + "[" + (j + 1) + "]");
+                var x = new Scanner(System.in);
+                matriz[i][j] = x.nextInt();
+            }
+        }
+        for (int i = 0; i < file; i++) {
+            for (int j = 0; j < columnas; j++) {
+                System.out.print(matriz[i][j]);
 
+            }
+            System.out.print("\n");
+        }
+    }*/
+
+        var arreglo1 = new Arreglo();
+        var arreglo2 = new Arreglo();
+        var vector1 = arreglo1.crearVector(5);
+        for (int i = 0; i < vector1.length; i++) {
+            System.out.println(vector1[i]);
+        }
+        var vector2 = arreglo2.crearVector(5);
+        for (int j = 0; j < vector2.length; j++) {
+            System.out.println(vector2[j]);
+        }
+        var sumax = new Arreglo();
+        var suma1 = sumax.sumaVector(vector1, vector2);
+
+        var arreglo3 = new Arreglo();
+        var arreglo4 = new Arreglo();
+        var matriz1 = arreglo3.crearMatriz(5, 5);
+        for (int k = 0; k < vector1.length; k++) {
+            for (int m = 0; m < vector1.length; m++) {
+                
+            System.out.println(matriz1[k][m]);
+        }
+        }
+
+        var matriz2 = arreglo4.crearMatriz(5,5);
+        for (int l = 0; l < vector2.length; l++) {
+            for (int n = 0; n < vector2.length; n++) {
+            System.out.println(matriz2[l][n]);
+            }
+        }
+        var sumay = new Arreglo();
+        var suma2 = sumax.sumaMatriz(matriz1, matriz2);
     }
-
 }
