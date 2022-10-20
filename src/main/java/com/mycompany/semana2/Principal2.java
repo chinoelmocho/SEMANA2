@@ -47,7 +47,7 @@ public class Principal2 {
         decimalList[2] = 1.9;
         for (int i = 0; i < 3; i++) {
             System.out.println("posicion "+(i+1)+": "+decimalList[i]);
-        }*/
+        }
 
         System.out.println(" Ingrese la dimensión del arreglo ");
         var dimension = new Scanner(System.in);
@@ -55,7 +55,7 @@ public class Principal2 {
         var num = new int[valor];
         var x = valor;
         var variable = 0;
-        for (int i = 0; i < x; i++) {
+        for (int i = 0; i < num.length; i++) {
             System.out.println("Ingrese el valor de la posicion " + (i + 1) + ": ");
             var leer = new Scanner(System.in);
             variable = leer.nextInt();
@@ -63,8 +63,26 @@ public class Principal2 {
         }
         System.out.println("Los numeros ingresados son: ");
         for (int i = 0; i < x; i++) {
-            System.out.println(num[i]);
-        }
+            System.out.println(num[i]);}*/
+        var lectura= new Scanner(System.in);
+        System.out.println("Ingrese el numero de filas que tendra la matriz");
+          var file=lectura.nextInt();
+        System.out.println("Ingrese el numero de columnas que tendra la matriz");
+          var columnas=lectura.nextInt(); 
+          var matriz=new int[file][columnas];
+          for (int i = 0; i < file; i++){
+          for(int j = 0; j < columnas; j++){
+          System.out.println("Ingrese el valor de la pocicion ["+(i+1)+"]"+"["+(j+1)+"]");
+          var x= new Scanner(System.in);
+          matriz[i][j]= x.nextInt();
+          }}
+          for (int i = 0; i < file; i++){
+          for(int j = 0; j < columnas; j++){
+          System.out.print("El valor de la pocicion ["+(i+1)+"]"+"["+(j+1)+"]:");
+          System.out.println(matriz[i][j]);
+          
+          }}
+          }      
 
     }
 
