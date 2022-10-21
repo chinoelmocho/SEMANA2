@@ -16,10 +16,9 @@ public class LugarMatriculacion {
     String ciudad;
 
     public String mostrarInfo() {
-        var informacion=("El lugar donde se realizo la matriculacion es: " + this.descripcion
+        var informacion = ("El lugar donde se realizo la matriculacion es: " + this.descripcion
                 + " El numero del propietario es : " + this.telefono + " y la provincia de matriculacion es: "
                 + this.provincia + " en la ciudad de " + this.ciudad);
-        return informacion; 
+        return informacion;
     }
 }
-       

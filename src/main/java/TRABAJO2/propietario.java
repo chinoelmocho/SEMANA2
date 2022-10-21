@@ -9,20 +9,20 @@ package TRABAJO2;
  * @author Mauricio Ortiz Ochoa
  */
 public class Propietario {
-    
+
     String nombre;
     String telefono;
     String direccion;
     int yearNacimiento;
-    
-    public String mostrarInfo(){
-        return "El propietario se llama: "+this.nombre+ " su número de teléfono es:"
-                +this.telefono+ "vive en la dirección"+this.direccion+" y tiene "
-                +this.yearNacimiento+ "años";
+
+    public String mostrarInfo() {
+        return "El propietario se llama: " + this.nombre + " su número de teléfono es:"
+                + this.telefono + "vive en la dirección" + this.direccion + " y tiene "
+                + this.yearNacimiento + "años";
     }
-    
-    public int calcularEdad(int yearActual){
-        return yearActual-this.yearNacimiento;
+
+    public int calcularEdad(int yearActual) {
+        return yearActual - this.yearNacimiento;
     }
-    
+
 }
